@@ -51,3 +51,7 @@ him     2.24494896
 her     3.67306853
 ```
 
+## further work
+
+by removing all weights close to 0 and all the corresponding words from the input vector, you could potentially reduce the size of the network and increase training and inference speed.
+
