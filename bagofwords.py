@@ -37,7 +37,7 @@ with open( "reviews.txt", 'r' ) as f:
         words = [
             wordmap[word]
             for word in line.strip().split(" ")
-            if word and wordmap[word] < vocab_size
+            if word and word in wordmap and wordmap[word] < vocab_size
         ]
         for word in words:
             bag[word] += 1 / len(words)
