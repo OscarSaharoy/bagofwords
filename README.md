@@ -51,6 +51,15 @@ him     2.24494896
 her     3.67306853
 ```
 
+and the network can also generalise to non-review inputs:
+
+```
+$ ./infer.py "you are my everything"
+[2.22616088]
+$ ./infer.py "you smell really bad and its kind of unpleasant to be around you"
+[-0.00081939]
+```
+
 ## further work
 
 by removing all weights close to 0 and all the corresponding words from the input vector, you could potentially reduce the size of the network and increase training and inference speed.
